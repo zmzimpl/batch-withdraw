@@ -1,0 +1,24 @@
+{
+  "name": "okx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@binance/connector": "^3.3.0",
+    "@cosmjs/crypto": "^0.31.3",
+    "@cosmjs/stargate": "^0.31.3",
+    "alchemy-sdk": "^2.9.2",
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4",
+    "ethers": "^6.6.3",
+    "web3": "^4.0.1"
+  },
+  "devDependencies": {
+    "hardhat": "^2.17.0"
+  }
+}
