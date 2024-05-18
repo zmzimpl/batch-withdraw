@@ -26,6 +26,7 @@ const transfers = [
 ];
 const maxRetries = 100; // 设置最大重试次数
 const timeoutMs = 60000; // 超时时间（毫秒）
+const sendAmount = 0.1; // 转账金额 0.1 sol
 
 const decodedPrivateKey = bs58.decode(privateKey);
 
@@ -70,7 +71,7 @@ async function sendTransferWithRetryAndTimeout(to, retries = 0) {
         web3.SystemProgram.transfer({
           fromPubkey: senderKeypair.publicKey,
           toPubkey: toPubkey,
-          lamports: 100000000,
+          lamports: sendAmount * web3.LAMPORTS_PER_SOL,
         })
       );
 
